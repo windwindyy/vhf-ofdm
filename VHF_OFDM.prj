@@ -1,0 +1,133 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1998530563" file="C:\Users\Qianjunyang\Desktop\vhf_ofdm\VHF_OFDM.prj" location="C:\Users\Qianjunyang\Desktop\vhf_ofdm" name="VHF_OFDM" target="target.mlapps" target-name="打包为 App">
+    <param.appname>VHF_OFDM</param.appname>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+    </param.products.id>
+    <param.products.version>
+      <item>24.2</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>C:\Users\Qianjunyang\Desktop</param.output>
+    <param.guid>655e14e8-fbb7-4df0-bb12-c809ed85d754</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\main.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\add_awgn.m</file>
+      <file>${PROJECT_ROOT}\alamouti_decode.m</file>
+      <file>${PROJECT_ROOT}\channel_decode.m</file>
+      <file>${PROJECT_ROOT}\channel_encode.m</file>
+      <file>${PROJECT_ROOT}\channel_equalize.m</file>
+      <file>${PROJECT_ROOT}\channel_estimate_interp.m</file>
+      <file>${PROJECT_ROOT}\crc16_check.m</file>
+      <file>${PROJECT_ROOT}\crc16_encode.m</file>
+      <file>${PROJECT_ROOT}\deinterleave.m</file>
+      <file>${PROJECT_ROOT}\demodulate.m</file>
+      <file>${PROJECT_ROOT}\generate_source.m</file>
+      <file>${PROJECT_ROOT}\interleave.m</file>
+      <file>${PROJECT_ROOT}\mimo_channel.m</file>
+      <file>${PROJECT_ROOT}\mimo_channel_est.m</file>
+      <file>${PROJECT_ROOT}\mimo_ofdm_assemble_frame.m</file>
+      <file>${PROJECT_ROOT}\modulate.m</file>
+      <file>${PROJECT_ROOT}\ofdm_assemble_frame.m</file>
+      <file>${PROJECT_ROOT}\ofdm_config.m</file>
+      <file>${PROJECT_ROOT}\ofdm_freq_sync.m</file>
+      <file>${PROJECT_ROOT}\ofdm_mimo_sync.m</file>
+      <file>${PROJECT_ROOT}\ofdm_rx_demod.m</file>
+      <file>${PROJECT_ROOT}\ofdm_time_sync.m</file>
+      <file>${PROJECT_ROOT}\ofdm_tx_symbol.m</file>
+      <file>${PROJECT_ROOT}\rayleigh_fading.m</file>
+      <file>${PROJECT_ROOT}\test_all.m</file>
+      <file>${PROJECT_ROOT}\test_all_mimo.m</file>
+      <file>${PROJECT_ROOT}\vhf_channel.m</file>
+      <file>${PROJECT_ROOT}\vhf_ofdm_app.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\Qianjunyang" name="Desktop" optional="false">C:\Users\Qianjunyang\Desktop</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>E:\MATLAB\R2024b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
