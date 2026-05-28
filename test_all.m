@@ -13,14 +13,14 @@ frame_len = 1024;     % Data bits per frame (CRC unit)
 crc_len = 16;         % CRC checksum length
 
 % Modulation: 'QPSK' | '16QAM' | '64QAM'
-mod_type = 'QPSK';
+mod_type = '64QAM';
 
 % Carrier Frequency Offset (simulate 0.1ppm crystal mismatch @ 100MHz)
 % Typical: 0~10 Hz. Set to 0 to disable.
 cfo_hz = 10;
 
 % AWGN SNR for single-point test (dB)
-snr_db = 5;
+snr_db = 20;
 
 % SNR sweep for BER curve
 snr_vec = 0:2:25;

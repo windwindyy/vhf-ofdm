@@ -8,9 +8,9 @@ clear; clc;
 N = 1000000;              % Total source bits
 frame_len = 1024;       % Data bits per frame (CRC unit)
 crc_len = 16;
-mod_type = 'QPSK';
+mod_type = '16QAM';
 cfo_hz = 10;            % CFO injection
-snr_db = 5;             % AWGN SNR
+snr_db = 20;             % AWGN SNR
 
 % GUI parameter override (from vhf_ofdm_app)
 if exist('gui_params.mat', 'file')
